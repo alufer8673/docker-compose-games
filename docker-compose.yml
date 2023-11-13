@@ -5,7 +5,7 @@ services:
     container_name: supermario-dc
     image: kaminskypavel/mario
     ports:
-      - "1033:80"
+      - "1033:8080"
     restart: unless-stopped
   "2048":
     container_name: 2048-game-dc
