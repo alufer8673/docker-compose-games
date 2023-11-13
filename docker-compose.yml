@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  supermario:
+    container_name: supermario-dc
+    image: kaminskypavel/mario
+    ports:
+      - "1033:80"
+    restart: unless-stopped
+  "2048":
+    container_name: 2048-game-dc
+    image: marcincuber/2048-game
+    ports:
+      - "1034:80"
+    restart: unless-stopped
+  tetris:
+    container_name: tetris-dc
+    image: bsord/tetris
+    ports:
+      - "1035:80"
+    restart: unless-stopped
