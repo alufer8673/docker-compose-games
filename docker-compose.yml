@@ -19,3 +19,9 @@ services:
     ports:
       - "1035:80"
     restart: unless-stopped
+  duck-hunt:
+    container_name: duck-hunt-dc
+    image: mojitoparty/duckhunt-js
+    ports:
+      - "1036:80"
+    restart: unless-stopped
